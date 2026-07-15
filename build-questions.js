@@ -1,0 +1,89 @@
+const fs = require('fs');
+const path = require('path');
+
+const sources = [
+  ['core', 'Core', 'EPA608_Core_Questions.md'],
+  ['type1', 'Type I', 'EPA608_Type1_Questions.md'],
+  ['type2', 'Type II', 'EPA608_Type2_Questions.md'],
+  ['type3', 'Type III', 'EPA608_TYPE3_Questions.md']
+];
+
+function clean(value = '') {
+  return value.replace(/\r/g, '').replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function field(block, name, nextNames) {
+  const start = new RegExp(`\\*\\*${name}\\*\\*`, 'i').exec(block);
+  if (!start) return '';
+  const rest = block.slice(start.index + start[0].length);
+  let end = rest.length;
+  for (const next of nextNames) {
+    const match = new RegExp(`\\*\\*${next}\\*\\*`, 'i').exec(rest);
+    if (match && match.index < end) end = match.index;
+  }
+  return rest.slice(0, end).trim();
+}
+
+function parseChoices(raw) {
+  const lines = raw.replace(/\r/g, '').split('\n');
+  const choices = [];
+  let current = '';
+  for (const line of lines) {
+    const match = line.trim().match(/^([A-H])[.)]\s*(.+)$/i);
+    if (match) {
+      if (current) choices.push(clean(current));
+      current = match[2];
+    } else if (current && line.trim()) current += ` ${line.trim()}`;
+  }
+  if (current) choices.push(clean(current));
+  return choices;
+}
+
+function normalized(value) {
+  return clean(value).toLowerCase().replace(/^[a-h][.)]\s*/, '').replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+function correctIndexes(answer, choices, question = '') {
+  const answerNorm = normalized(answer);
+  const letterOnly = clean(answer).match(/^([A-H](?:\s*(?:,|and|&)\s*[A-H])*)$/i);
+  if (letterOnly) return [...clean(answer).matchAll(/[A-H]/gi)].map(m => m[0].toUpperCase().charCodeAt(0) - 65).filter(i => i < choices.length);
+  const found = choices.map((choice, index) => {
+    const value = normalized(choice);
+    const compactAnswer = answerNorm.replace(/\s/g, '');
+    const compactValue = value.replace(/\s/g, '');
+    return value && (answerNorm === value || answerNorm.includes(value) || value.includes(answerNorm) || compactAnswer.includes(compactValue) || compactValue.includes(compactAnswer)) ? index : -1;
+  }).filter(index => index >= 0);
+  if (found.length) return found;
+  if (/all of these (?:are )?true/i.test(answer) && /not true/i.test(question)) {
+    const noneIndex = choices.findIndex(choice => /none of these/i.test(choice));
+    if (noneIndex >= 0) return [noneIndex];
+  }
+  const answerWords = new Set(answerNorm.split(' ').filter(word => word.length > 1));
+  const scores = choices.map(choice => {
+    const choiceWords = new Set(normalized(choice).split(' ').filter(word => word.length > 1));
+    const shared = [...answerWords].filter(word => choiceWords.has(word)).length;
+    return shared / Math.min(answerWords.size || 1, choiceWords.size || 1);
+  });
+  const best = Math.max(...scores);
+  return best >= .7 ? [scores.indexOf(best)] : [];
+}
+
+function parseFile(key, label, filename) {
+  const markdown = fs.readFileSync(path.join(__dirname, filename), 'utf8');
+  return markdown.split(/^##\s+Question[^\n]*$/gmi).slice(1).map((block, index) => {
+    const question = clean(field(block, 'Question', ['Answer choices', 'Correct Answer', 'Explanation']));
+    const choices = parseChoices(field(block, 'Answer choices', ['Correct Answer', 'Explanation']));
+    const correctAnswer = clean(field(block, 'Correct Answer', ['Explanation']));
+    const explanation = clean(field(block, 'Explanation', [])) || 'No explanation was provided in the source material.';
+    return { id: `${key}-${index + 1}`, section: key, sectionLabel: label, question, choices, correctAnswer, correct: correctIndexes(correctAnswer, choices, question), explanation };
+  }).filter(q => q.question && q.choices.length >= 2 && q.correctAnswer);
+}
+
+const data = sources.flatMap(source => parseFile(...source));
+const unresolved = data.filter(q => !q.correct.length);
+if (unresolved.length) {
+  console.warn(`Warning: ${unresolved.length} answers could not be matched to choices:`);
+  unresolved.forEach(q => console.warn(`- ${q.id}: answer="${q.correctAnswer}" choices=${JSON.stringify(q.choices)}`));
+}
+fs.writeFileSync(path.join(__dirname, 'questions.js'), `window.QUESTION_BANK = ${JSON.stringify(data)};\n`);
+console.log(`Built ${data.length} questions (${sources.map(([key, label]) => `${label}: ${data.filter(q => q.section === key).length}`).join(', ')}).`);

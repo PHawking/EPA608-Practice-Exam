@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12362f">
+  <title>EPA 608 Practice Exam</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="EPA 608 Practice Exam home">
+      <span class="brand-mark">608</span>
+      <span><strong>EPA Practice Exam</strong><small>Technician certification prep</small></span>
+    </a>
+    <div id="header-actions" class="header-actions" hidden>
+      <span id="timer" class="timer" aria-live="polite">00:00</span>
+      <button id="pause-btn" class="button button-ghost" type="button">Pause test</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="setup-view" class="setup-view">
+      <div class="hero">
+        <p class="eyebrow">EPA Section 608</p>
+        <h1>Practice with purpose.<br><span>Pass with confidence.</span></h1>
+        <p>Build a practice exam from the complete question bank. Your answers stay private until you submit the finished test.</p>
+      </div>
+
+      <form id="setup-form" class="setup-card">
+        <div class="setup-heading">
+          <div><p class="step-label">Step 1</p><h2>Choose your sections</h2></div>
+          <button id="toggle-all" class="text-button" type="button">Select all</button>
+        </div>
+        <div id="section-options" class="section-options" aria-live="polite"></div>
+
+        <div class="setup-row">
+          <div><p class="step-label">Step 2</p><label for="question-count">Questions per section</label></div>
+          <select id="question-count">
+            <option value="10">10 questions</option>
+            <option value="25" selected>25 questions</option>
+            <option value="50">50 questions</option>
+            <option value="all">All available</option>
+          </select>
+        </div>
+        <label class="shuffle-option"><input id="shuffle-questions" type="checkbox" checked><span>Shuffle questions and answer choices</span></label>
+        <p id="setup-error" class="form-error" role="alert"></p>
+        <button class="button button-primary button-large" type="submit">Start practice exam <span aria-hidden="true">→</span></button>
+        <button id="resume-btn" class="button button-secondary button-large" type="button" hidden>Resume saved exam</button>
+        <p class="privacy-note">No answers are graded or revealed until you submit.</p>
+      </form>
+    </section>
+
+    <section id="exam-view" class="exam-view" hidden>
+      <aside class="exam-sidebar">
+        <div class="progress-copy"><span id="progress-label">Question 1 of 100</span><strong id="progress-percent">1%</strong></div>
+        <div class="progress-track"><span id="progress-bar"></span></div>
+        <div id="section-nav" class="section-nav"></div>
+        <div class="sidebar-key"><span><i class="dot answered"></i>Answered</span><span><i class="dot current"></i>Current</span></div>
+      </aside>
+
+      <div class="question-area">
+        <article class="question-card">
+          <div class="question-meta"><span id="section-badge" class="section-badge">Core</span><span id="question-number">Question 1</span></div>
+          <h2 id="question-text"></h2>
+          <p id="select-hint" class="select-hint" hidden>Select all answers that apply.</p>
+          <div id="answer-options" class="answer-options"></div>
+        </article>
+        <div class="exam-controls">
+          <button id="previous-btn" class="button button-secondary" type="button">← Previous</button>
+          <button id="next-btn" class="button button-primary" type="button">Next →</button>
+          <button id="submit-btn" class="button button-submit" type="button" hidden>Submit exam</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="results-view" class="results-view" hidden>
+      <div class="results-hero">
+        <p class="eyebrow">Exam complete</p>
+        <div id="score-ring" class="score-ring"><span id="score-percent">0%</span><small>overall</small></div>
+        <h1 id="result-title">Your results</h1>
+        <p id="result-summary"></p>
+        <div id="section-results" class="section-results"></div>
+        <div class="result-actions">
+          <button id="retry-btn" class="button button-primary" type="button">Build another exam</button>
+          <button id="review-all-btn" class="button button-secondary" type="button">Show all answers</button>
+        </div>
+      </div>
+      <div class="review-wrap">
+        <div class="review-heading"><div><p class="step-label">Answer review</p><h2 id="review-title">Questions to revisit</h2></div><span id="wrong-count" class="wrong-count"></span></div>
+        <div id="review-list" class="review-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="pause-overlay" class="modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="pause-title">
+      <div class="pause-icon">Ⅱ</div><p class="eyebrow">Test paused</p><h2 id="pause-title">Take a breather.</h2>
+      <p>Your place and answers are saved on this device. The timer is stopped.</p>
+      <button id="resume-overlay-btn" class="button button-primary button-large" type="button">Resume test</button>
+      <button id="exit-test-btn" class="text-button" type="button">Save and return to setup</button>
+    </div>
+  </div>
+
+  <div id="submit-overlay" class="modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="submit-title">
+      <p class="eyebrow">Ready to finish?</p><h2 id="submit-title">Submit your exam</h2>
+      <p id="submit-message"></p>
+      <div class="modal-actions"><button id="cancel-submit-btn" class="button button-secondary" type="button">Keep reviewing</button><button id="confirm-submit-btn" class="button button-submit" type="button">Submit & grade</button></div>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
