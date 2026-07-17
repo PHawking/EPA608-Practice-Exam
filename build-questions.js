@@ -97,7 +97,22 @@ function parseFile(key, label, filename) {
   }).filter(q => q.question && q.choices.length >= 2 && q.correctAnswer);
 }
 
-const data = sources.flatMap(source => parseFile(...source));
+const parsedData = sources.flatMap(source => parseFile(...source));
+const uniqueQuestions = new Map();
+const duplicates = [];
+for (const question of parsedData) {
+  const key = `${question.section}|${normalized(question.question)}`;
+  const existing = uniqueQuestions.get(key);
+  if (!existing) {
+    uniqueQuestions.set(key, question);
+    continue;
+  }
+  if (normalized(existing.correctAnswer) !== normalized(question.correctAnswer)) {
+    throw new Error(`Conflicting duplicate answer keys: ${existing.id} and ${question.id}`);
+  }
+  duplicates.push({ kept: existing.id, removed: question.id });
+}
+const data = [...uniqueQuestions.values()];
 const unresolved = data.filter(q => !q.correct.length);
 if (unresolved.length) {
   console.warn(`Warning: ${unresolved.length} answers could not be matched to choices:`);
@@ -105,3 +120,4 @@ if (unresolved.length) {
 }
 fs.writeFileSync(path.join(__dirname, 'questions.js'), `window.QUESTION_BANK = ${JSON.stringify(data)};\n`);
 console.log(`Built ${data.length} questions (${sources.map(([key, label]) => `${label}: ${data.filter(q => q.section === key).length}`).join(', ')}).`);
+if (duplicates.length) console.log(`Removed ${duplicates.length} duplicate question entries.`);

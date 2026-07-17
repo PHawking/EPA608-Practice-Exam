@@ -2,7 +2,7 @@
   const bank = window.QUESTION_BANK || [];
   const sectionOrder = ['core', 'type1', 'type2', 'type3'];
   const sectionMeta = { core: ['Core', 'Fundamentals & regulations'], type1: ['Type I', 'Small appliances'], type2: ['Type II', 'High-pressure systems'], type3: ['Type III', 'Low-pressure systems'] };
-  const storageKey = 'epa608-practice-exam-v3';
+  const storageKey = 'epa608-practice-exam-v4';
   const $ = id => document.getElementById(id);
   let state = null;
   let timerHandle = null;
