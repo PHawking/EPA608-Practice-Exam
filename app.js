@@ -14,6 +14,27 @@
     return result;
   }
 
+  function prepareChoices(question, shouldShuffle) {
+    const choices = question.choices.map((text, originalIndex) => ({ text, originalIndex }));
+    if (!shouldShuffle) return choices;
+
+    const sourceText = [question.question, question.correctAnswer, ...question.choices].join(' | ');
+    const letterReference = /(?:both|either|neither)\s*\(?[A-H]\)?\s*(?:and|or|&)\s*\(?[A-H]\)?/i;
+    const letterList = /(?:^|\|)\s*\(?[A-H]\)?(?:\s*(?:,|and|or|&)\s*\(?[A-H]\)?)+\s*(?:\||$)/i;
+    const positionReference = /(?:all|none|both|neither)\s+of\s*(?:the\s*)?(?:above|below)|(?:first|second|third|fourth|last|previous|preceding|following)\s+(?:answer|choice|option|two|three)/i;
+
+    // If wording depends on the original letters or positions, preserve every
+    // choice exactly as authored so references such as "Both A and C" remain true.
+    if (letterReference.test(sourceText) || letterList.test(sourceText) || positionReference.test(sourceText)) return choices;
+
+    // Position-independent aggregate choices remain meaningful after a shuffle,
+    // but conventionally belong at the bottom of the list.
+    const aggregate = /^(?:all|none|both|neither)\s+of\s+(?:these|the following)\b/i;
+    const regularChoices = choices.filter(choice => !aggregate.test(choice.text));
+    const aggregateChoices = choices.filter(choice => aggregate.test(choice.text));
+    return [...shuffle(regularChoices), ...aggregateChoices];
+  }
+
   function save() { if (state) localStorage.setItem(storageKey, JSON.stringify(state)); }
   function savedState() { try { return JSON.parse(localStorage.getItem(storageKey)); } catch { return null; } }
   function show(view) { ['setup-view', 'exam-view', 'results-view'].forEach(id => $(id).hidden = id !== view); $('header-actions').hidden = view !== 'exam-view'; window.scrollTo(0, 0); }
@@ -38,7 +59,7 @@
       let pool = bank.filter(q => q.section === section);
       if (shouldShuffle) pool = shuffle(pool);
       if (count !== 'all') pool = pool.slice(0, Number(count));
-      return pool.map(question => ({ ...question, choices: shouldShuffle ? shuffle(question.choices.map((text, originalIndex) => ({ text, originalIndex }))) : question.choices.map((text, originalIndex) => ({ text, originalIndex })) }));
+      return pool.map(question => ({ ...question, choices: prepareChoices(question, shouldShuffle) }));
     });
     state = { status: 'active', questions, answers: {}, current: 0, elapsed: 0, runningSince: Date.now(), paused: false };
     save(); enterExam();
