@@ -38,7 +38,7 @@ False
 
 **Explanation**
 
-Ozone in the Stratosphere absorbs and reflects harmful UV rays from the sun, not ground level ozone. Ground level ozone is actually harmful for humans when inhaled.
+Ozone in the stratosphere absorbs and reflects harmful UV rays from the sun, not ground level ozone. Ground level ozone is actually harmful for humans when inhaled.
 
 ## Question 3
 
@@ -90,7 +90,7 @@ Which of the following statements is TRUE about chlorine?
 **Answer choices**
 
 A. chlorine atom can only bond once with an oxygen atom
-B. single chlorine atom can survive in the atmosphere for vO years
+B. A single chlorine atom can survive in the atmosphere for years
 C. Chlorine creates carbon monoxide when it destroys ozone molecules
 D. chlorine atom disintegrates quickly in the atmosphere
 
@@ -202,7 +202,7 @@ Emissions of refrigerant chemicals such as CFCs and HCFCs by humans
 
 **Explanation**
 
-The primary source of the rise of chlorine in the atmosphere Is the refrigerants that have been released by humans.
+The primary source of the rise of chlorine in the atmosphere is the refrigerants that have been released by humans.
 
 ## Question 11
 
@@ -345,11 +345,11 @@ D. No
 
 **Correct Answer**
 
-Yes, but only if it has been reclaimed by an EPA- certified reclaimer to AHRI Standard 700 purity specifications
+Yes, but only if it has been reclaimed by an EPA-certified reclaimer to AHRI Standard 700 purity specifications
 
 **Explanation**
 
-Used Class I/II refrigerants and non-exempt substitutes generally cannot be resold unless reclaimed by an EPA- certified reclaimer to AHRI Standard 700 purity. (Exempt substitutes such as CO, are not the focus here.)
+Used Class I/II refrigerants and non-exempt substitutes generally cannot be resold unless reclaimed by an EPA-certified reclaimer to AHRI Standard 700 purity. (Exempt substitutes such as CO2 are not the focus here.)
 
 ## Question 5
 
@@ -370,7 +370,7 @@ CFCs, HCFCs, HFCs
 
 **Explanation**
 
-All equipment used to recover ozone-depleting refrigerants or their substitutes must meet EPA standards. “Ozone-depleting refrigerants and their substitutes” include CFCs, HCFCs, and HFCs. Selecting ‘All refrigerants’ is too broad, as it includes exempt substitutes like CO2 (R- 744).
+All equipment used to recover ozone-depleting refrigerants or their substitutes must meet EPA standards. “Ozone-depleting refrigerants and their substitutes” include CFCs, HCFCs, and HFCs. Selecting ‘All refrigerants’ is too broad, as it includes exempt substitutes like CO2 (R-744).
 
 ## Question 6
 
@@ -391,7 +391,7 @@ A technician with Section 608 certification, A business that employs a technicia
 
 **Explanation**
 
-SY Y certification The sales restriction in Section 608 limits the sale of all ozone- depleting refrigerants and their substitutes to technicians with certification or their employers. R-22 is an HCFC refrigerant, so it falls in this category.
+The sales restriction in Section 608 limits the sale of all ozone-depleting refrigerants and their substitutes to technicians with certification or their employers. R-22 is an HCFC refrigerant, so it falls in this category.
 
 ## Question 7
 
@@ -559,13 +559,13 @@ Opening equipment, Servicing equipment, Disposing of equipment
 
 **Explanation**
 
-It is necessary to recover refrigerant before opening, servicing, or disposing of refrigerant. This prevents the venting of refrigerant. You have correctly selected 2.
+It is necessary to recover refrigerant before opening, servicing, or disposing of equipment containing refrigerant. This prevents the intentional venting of refrigerant.
 
 ## Question 15
 
 **Question**
 
-Ascrap yard is taking in old rooftop units. Under Section 608, who must verify that all refrigerant has been removed before disposal?
+A scrap yard is taking in old rooftop units. Under Section 608, who must verify that all refrigerant has been removed before disposal?
 
 **Answer choices**
 
@@ -586,7 +586,7 @@ Section 608 dictates that the final person in the disposal chain must make sure 
 
 **Question**
 
-EPA Section 608 regulations apply to appliances that contain and use . refrigerant. Which of the following is covered?
+EPA Section 608 regulations apply to appliances that contain and use refrigerant. Which of the following is covered?
 
 **Answer choices**
 
@@ -664,7 +664,7 @@ Added a global phase-down schedule for HFCs due to their climate impact
 
 **Explanation**
 
-Kigali Amendment expands the Montreal Protocol by adding a phasedown schedule for HEC production and consumption. HFCs don't deplete ozone, but they have high GWP.
+The Kigali Amendment expands the Montreal Protocol by adding a phasedown schedule for HFC production and consumption. HFCs don't deplete ozone, but they have high GWP.
 
 ## Question 20
 
@@ -706,7 +706,7 @@ To evaluate alternative refrigerants, To further the goals of the CAA, To consid
 
 **Explanation**
 
-environment All of these statements are true.
+All of these statements are true.
 
 ## Question 22
 
@@ -719,7 +719,7 @@ What do you do if you discover that you have added Refrigerant B to a system tha
 A. Vent the refrigerant
 B. Recover the mixture in a separate recovery cylinder
 C. Add more of Refrigerant B
-D. Add more of Refrigerant
+D. Add more of Refrigerant A
 
 **Correct Answer**
 
@@ -727,7 +727,7 @@ Recover the mixture in a separate recovery cylinder
 
 **Explanation**
 
-lf you accidentally mix two refrigerants, you must recover the mixture in a separate recovery cylinder. You need a separate recovery cylinder because you don't want this mixture to contaminate the contents of other cylinders.
+If you accidentally mix two refrigerants, you must recover the mixture in a separate recovery cylinder. You need a separate recovery cylinder because you don't want this mixture to contaminate the contents of other cylinders.
 
 ## Question 23
 
@@ -748,7 +748,7 @@ Any individual using EPA-approved recovery equipment
 
 **Explanation**
 
-For small appliances being prepared for final disposal, EPA regulations do not require technician certification, as long as EPA- approved refrigerant recovery equipment is properly used.
+For small appliances being prepared for final disposal, EPA regulations do not require technician certification, as long as EPA-approved refrigerant recovery equipment is properly used.
 
 ## Question 24
 
@@ -801,9 +801,9 @@ Which of the following scenarios are NOT considered de minimis releases? ("De mi
 **Answer choices**
 
 A. Catastrophic failure after operating the equipment well beyond the recommended service/maintenance date
-B. Asmall amount is released when connecting or disconnecting hoses with low-loss fittings during normal X service
+B. A small amount is released when connecting or disconnecting hoses with low-loss fittings during normal service
 C. Releases occur during maintenance because recovery was not performed with certified recovery/recycling equipment (equipment tested and labeled according to EPA requirements)
-D. brief puff of air is produced when the certified recovery
+D. A brief puff of refrigerant is released when disconnecting certified recovery equipment after recovery is complete
 
 **Correct Answer**
 
@@ -811,7 +811,7 @@ A & C
 
 **Explanation**
 
-Equipment is disconnected once the recovery is complete B and D are considered de minimis because they describe small, unavoidable releases when connecting/disconnecting during proper servicing. C is not de minimis because “certified equipment” refers to certified and labeled recovery/recycling equipment (not technician certification), and failure
+B and D are considered de minimis because they describe small, unavoidable releases during proper servicing. A reflects an avoidable failure rather than a good-faith recovery attempt, and C is not de minimis because recovery was not performed with certified and labeled recovery/recycling equipment.
 
 ## Question 27
 
@@ -842,18 +842,18 @@ Which of the following are violations of the CAA Venting Prohibition? (Select al
 
 **Answer choices**
 
-A. Release of refrigerants because appliances were not Yo recovered
+A. Release of refrigerants because appliances were not recovered
 B. Releasing isobutane while servicing equipment
 C. Releasing HFC refrigerant because of catastrophic equipment failure
-D. Refrigerants released when disconnecting non-low-loss
+D. Refrigerants released when disconnecting non-low-loss hoses to service an appliance
 
 **Correct Answer**
 
-Release of refrigerants because appliances were not recovered, Refrigerants released when disconnecting non- low-loss hoses to service an appliance
+Release of refrigerants because appliances were not recovered, Refrigerants released when disconnecting non-low-loss hoses to service an appliance
 
 **Explanation**
 
-hoses to service an appliance These are violations of the venting prohibition. Isobutane is exempted because it is a natural refrigerant and does not deplete ozone and Catastrophic failure of equipment is covered under de minimis, as long as all proper procedures were followed.
+Releasing refrigerant because an appliance was not recovered and disconnecting non-low-loss hoses are violations of the Venting Prohibition. Isobutane is exempt, and a catastrophic equipment failure may qualify as de minimis when all proper procedures were followed.
 
 ## Question 29
 
@@ -874,7 +874,7 @@ R-290, R-600a, R-744
 
 **Explanation**
 
-R-290 (propane), R-600a (isobutane), and R-744 (carbon dioxide) are all considered natural refrigerants. In contrast, R-11 is a chlorofluorocarbon (CFC) that has significant ozone depletion potential and is not classified as a natural refrigerant. You have correctly selected 2.
+R-290 (propane), R-600a (isobutane), and R-744 (carbon dioxide) are all considered natural refrigerants. In contrast, R-11 is a chlorofluorocarbon (CFC) that has significant ozone depletion potential and is not classified as a natural refrigerant.
 
 ## Question 30
 
@@ -1010,18 +1010,18 @@ Which of the following is considered a de minimis refrigerant release under EPA 
 
 **Answer choices**
 
-A. Asmall release when connecting hoses with low-loss fittings during normal servicing
+A. A small release when connecting hoses with low-loss fittings during normal servicing
 B. Venting refrigerant because recovery equipment was unavailable
-C. brief puff released when disconnecting certified recovery equipment after recovery is complete
-D. Intentionally releasing refrigerant during system
+C. A brief puff released when disconnecting certified recovery equipment after recovery is complete
+D. Intentionally releasing refrigerant during system maintenance
 
 **Correct Answer**
 
-A small release when connecting hoses with
+A & C
 
 **Explanation**
 
-maintenance Small unavoidable releases that occur during proper servicing, such as connecting hoses with low-loss fittings or disconnecting certified recovery equipment, are considered de minimis releases under EPA regulations.
+Small unavoidable releases that occur during proper servicing, such as connecting hoses with low-loss fittings or disconnecting certified recovery equipment after recovery is complete, are considered de minimis releases under EPA regulations.
 
 ## Question 37
 
@@ -1067,7 +1067,7 @@ As the temperature of a liquid increases, it turns into vapor. For example, when
 
 **Question**
 
-or Which component has the opposite function to the condenser?
+Which component has the opposite function to the condenser?
 
 **Answer choices**
 
@@ -1193,7 +1193,7 @@ When refrigerant exits the metering device, it is in a low-pressure liquid state
 
 **Question**
 
-Hh Conneee Inside the compressor, what happens to the refrigerant?
+Inside the compressor, what happens to the refrigerant?
 
 **Answer choices**
 
@@ -1296,7 +1296,7 @@ At constant pressure, adding heat will raise the temperature of the substance un
 
 **Question**
 
-Condensation happens when a gas Or vapor cools down and becomes a liquid.
+Condensation happens when a gas or vapor cools down and becomes a liquid.
 
 **Answer choices**
 
@@ -1616,7 +1616,7 @@ It contains chlorine, It could be R-22
 
 **Explanation**
 
-lf a refrigerant has an ODP of anything greater than O, it must contain chlorine, since it is chlorine that is responsible for destroying ozone. Examples of this include R-11, which has an ODP of 1, and R-22, which has an ODP of 0.055. They both contain chlorine. You have correctly selected 1.
+If a refrigerant has an ODP greater than 0, it contains an ozone-depleting element such as chlorine or bromine. Examples include R-11, which has an ODP of 1, and R-22, which has an ODP of 0.055; both contain chlorine.
 
 ## Question 17
 
@@ -1626,18 +1626,18 @@ R-410A has a GWP of about 2,088. What does this number mean?
 
 **Answer choices**
 
-A. It emits 2,088 kg CO, for every kilogram produced
-B. It is 2,088x more ozone-depleting than CO, across 100 years
+A. It emits 2,088 kg CO2 for every kilogram produced
+B. It is 2,088x more ozone-depleting than CO2 across 100 years
 C. It has 2,088 ppm allowable concentration in occupied spaces
 D. It traps roughly 2,088 x as much heat as the same mass of CO2 over 100 years
 
 **Correct Answer**
 
-It traps roughly 2,088x as much heat as the same mass of CO, over 100 years
+It traps roughly 2,088x as much heat as the same mass of CO2 over 100 years
 
 **Explanation**
 
-GWP compares the heat absorbed by a gas to that of CO, over a 100-year time horizon. So a GWP near 2,088 means one kilogram of R-410A warms the atmosphere about 2,088 times as much as one kilogram of CO, over that period.
+GWP compares the heat absorbed by a gas to that of CO2 over a 100-year time horizon. So a GWP near 2,088 means one kilogram of R-410A warms the atmosphere about 2,088 times as much as one kilogram of CO2 over that period.
 
 ## Question 18
 
@@ -2039,7 +2039,7 @@ Class B is high toxicity as we said for the previous question, so class A is low
 
 **Question**
 
-3 eset Which gas is used as a reference for measuring GWP?
+Which gas is used as a reference for measuring GWP?
 
 **Answer choices**
 
@@ -2108,7 +2108,7 @@ Which of the following are HCFCs? (Choose all that apply)
 
 A. R-22
 B. R-123
-C: R-124
+C. R-124
 D. R-211
 
 **Correct Answer**
@@ -2165,7 +2165,7 @@ HFCs are harmful to the environment because they contribute to global warming.
 
 **Question**
 
-What is the chemical name for the HFO refrigerant R-1 234yf commonly used in HVAC systems?
+What is the chemical name for the HFO refrigerant R-1234yf commonly used in HVAC systems?
 
 **Answer choices**
 
@@ -2197,11 +2197,11 @@ D. Carbon dioxide has an ODP of 1
 
 **Correct Answer**
 
-Carbon dioxide has a GWP of 1, Carbon
+Carbon dioxide has a GWP of 1, Carbon dioxide has an ODP of 0
 
 **Explanation**
 
-Carbon dioxide has a GWP of 1. GWP is a comparison of how much energy a gas absorbs over 100 years, compared to carbon dioxide. Carbon dioxide has an ODP of 0. because it does not contain chlorine so it does not destroy ozone. You have correctly selected 1.
+Carbon dioxide has a GWP of 1. GWP compares how much energy a gas absorbs over 100 years with carbon dioxide. Carbon dioxide has an ODP of 0 because it does not contain chlorine or bromine and does not destroy ozone.
 
 ## Question 46
 
@@ -2264,7 +2264,7 @@ R-1234yf, R-744
 
 **Explanation**
 
-R-1234yf (HFO) and R-744 (CO,) do not contain chlorine and therefore have an ODP of 0, meaning they do not destroy the ozone layer. R-11 (CFC) and R-22 (HCFC) contain chlorine and have an ODP greater than O, so they do deplete the ozone layer.
+R-1234yf (HFO) and R-744 (CO2) do not contain chlorine and therefore have an ODP of 0, meaning they do not destroy the ozone layer. R-11 (CFC) and R-22 (HCFC) contain chlorine and have an ODP greater than 0, so they do deplete the ozone layer.
 
 ## Question 49
 
@@ -2290,7 +2290,7 @@ B3 refrigerants have high toxicity and high flammability, making them the most d
 
 **Question**
 
-tre A contractor must choose a refrigerant class for use in an occupied classroom where the lowest combined toxicity and flammability risk is required under ASHRAE Standard 34. Which classification is the best fit?
+A contractor must choose a refrigerant class for use in an occupied classroom where the lowest combined toxicity and flammability risk is required under ASHRAE Standard 34. Which classification is the best fit?
 
 **Answer choices**
 
@@ -2347,7 +2347,7 @@ HFCs, HFOs
 
 **Explanation**
 
-HFCs and HFOs are non-ozone depleting since they do not have chlorine atoms. They both have an ODP of 0. But CFCs and HCFCs, contain chlorine atoms. So they are the most ozone-depleting. You have correctly selected 1.
+HFCs and HFOs are non-ozone-depleting because they do not contain chlorine atoms. They both have an ODP of 0. CFCs and HCFCs contain chlorine atoms and therefore deplete ozone.
 
 ## Question 53
 
@@ -2406,13 +2406,13 @@ False
 
 **Explanation**
 
-This statement is false. GWP is a measure of how much heat a greenhouse gas traps in the atmosphere over 100 years compared to carbon dioxide (CO,), NOT carbon monoxide (CO).
+This statement is false. GWP is a measure of how much heat a greenhouse gas traps in the atmosphere over 100 years compared to carbon dioxide (CO2), not carbon monoxide (CO).
 
 ## Question 56
 
 **Question**
 
-If agas has a GWP of 50, it means it has 50 times less global warming potential than carbon dioxide.
+If a gas has a GWP of 50, it means it has 50 times less global warming potential than carbon dioxide.
 
 **Answer choices**
 
@@ -2450,7 +2450,7 @@ R-410A is classified as an A1 refrigerant, meaning it has low toxicity and no fl
 
 **Question**
 
-Cole The GWPs of HFOs and HCs are close to those of HCFCs.
+The GWPs of HFOs and HCs are close to those of HCFCs.
 
 **Answer choices**
 
@@ -2551,7 +2551,7 @@ Dew point is the temperature at which the first drop of liquid begins to form as
 
 **Question**
 
-A manufacturer lists a refrigerant mixture with R-32 (23%), R-1 72) (25%), and R-134a (52%). How is this blend classified?
+A manufacturer lists a refrigerant mixture with R-32 (23%), R-125 (25%), and R-134a (52%). How is this blend classified?
 
 **Answer choices**
 
@@ -2579,7 +2579,7 @@ Which of the following is considered retrofitting?
 A. AnEPA approved process to make DIY refrigerant blends
 B. Replacing a system that used HCFC refrigerants
 C. Replacing HCFC refrigerants with other refrigerants
-D. Modifying components of the system to use anew
+D. Modifying components of the system to use a new refrigerant
 
 **Correct Answer**
 
@@ -2614,7 +2614,7 @@ All of the above
 
 **Question**
 
-lf a refrigerant has a drop-in replacement, then no retrofit is needed.
+If a refrigerant has a drop-in replacement, then no retrofit is needed.
 
 **Answer choices**
 
@@ -2802,13 +2802,13 @@ Water absorption causing ice blockages
 
 **Explanation**
 
-Hygroscopic oils attract and retain moisture. The absorbed water can freeze and obstruct piping, performance and flow.
+Hygroscopic oils attract and retain moisture. The absorbed water can freeze and obstruct piping, reducing performance and flow.
 
 ## Question 3
 
 **Question**
 
-lf we are retrofitting a system to use R-134a, which oil do we need to use?
+If we are retrofitting a system to use R-134a, which oil do we need to use?
 
 **Answer choices**
 
@@ -2823,13 +2823,13 @@ Polyolester (POE)
 
 **Explanation**
 
-We need to use polyester oil (POE) with all HFC refrigerant applications. Since R-134 a is an HFC refrigerant, we need to use POE.
+We need to use polyolester oil (POE) with HFC refrigerant applications. Since R-134a is an HFC refrigerant, we need to use POE.
 
 ## Question 4
 
 **Question**
 
-Oe R-1234yf is not miscible with any refrigerant oils.
+R-1234yf is not miscible with any refrigerant oils.
 
 **Answer choices**
 
@@ -2861,13 +2861,13 @@ True
 
 **Explanation**
 
-This statement is true. Alkylbenzene is used with systems that contain HCFC, This means it has to be miscible with HCFC refrigerants.
+This statement is true. Alkylbenzene is used with systems that contain HCFCs. This means it has to be miscible with HCFC refrigerants.
 
 ## Question 6
 
 **Question**
 
-vole An ideal oil is best at handling only high temperatures and high pressures.
+An ideal oil is best at handling only high temperatures and high pressures.
 
 **Answer choices**
 
@@ -2905,7 +2905,7 @@ This statement is true. Oils need to be miscible with the refrigerant at all ope
 
 **Question**
 
-An oil is suitable for use in an enclosed system as long as it is non- flammable only at startup and shutdown temperatures.
+An oil is suitable for use in an enclosed system as long as it is non-flammable only at startup and shutdown temperatures.
 
 **Answer choices**
 
@@ -2924,7 +2924,7 @@ This statement is false. An oil used in an enclosed system must be non-flammable
 
 **Question**
 
-ae Hydrolysis is when refrigerant oils break down in the presence of water.
+Hydrolysis is when refrigerant oils break down in the presence of water.
 
 **Answer choices**
 

@@ -8,7 +8,7 @@ After opening a system for service, a technician suspects moisture is present. W
 
 **Answer choices**
 
-A. Purge the condenser to vent vapor G
+A. Purge the condenser to vent vapor
 B. Drain the oil separator completely
 C. Reduce condenser water flow for longer contact time
 D. Install a correctly sized filter drier
@@ -49,7 +49,7 @@ the compressor has proper lubrication at start-up.
 
 **Question**
 
-What visual indication might be seen ona moisture-indicating sight glass if moisture is present in a refrigeration system?
+What visual indication might be seen on a moisture-indicating sight glass if moisture is present in a refrigeration system?
 
 **Answer choices**
 
@@ -70,7 +70,7 @@ A moisture-indicating sight glass uses a moisture-sensitive indicator that chang
 
 **Question**
 
-Before servicing a rooftop unit, where should you verify th official specifications?
+Before servicing a rooftop unit, where should you verify the official specifications?
 
 **Answer choices**
 
@@ -113,7 +113,7 @@ A receiver tank connects to the liquid line near the condenser outlet to capture
 
 **Question**
 
-When the suction service valve is back-seated, which port is Cosed?
+When the suction service valve is back-seated, which port is closed?
 
 **Answer choices**
 
@@ -239,7 +239,7 @@ For an IPR system with more than 500 pounds of refrigerant, it is compulsory to 
 
 **Question**
 
-A supermarket commercial refrigeration rack with 400 Ib of R-410A refrigerant was repaired for leaks. How often must leak inspections be performed after repair?
+A supermarket commercial refrigeration rack with 400 lb of R-410A refrigerant was repaired for leaks. How often must leak inspections be performed after repair?
 
 **Answer choices**
 
@@ -281,7 +281,7 @@ The leak count is largely driven by installer skill and workmanship on the field
 
 **Question**
 
-On January 10, 2024, an HVAC servicing company disposes of a rooftop unit containing 35 Lb of refrigerant. Until what date must the company retain the disposal records at minimum?
+On January 10, 2024, an HVAC servicing company disposes of a rooftop unit containing 35 lb of refrigerant. Until what date must the company retain the disposal records at minimum?
 
 **Answer choices**
 
@@ -302,7 +302,7 @@ An HVAC servicing company that disposes of an appliance with a charge between 5 
 
 **Question**
 
-A 60-Ib comfort-cooling unit fails verification after a leak repair. The Owner decides to retire it and replace it with a CO2 (R-744) system, which is exempt from the Venting Prohibition. Under EPA leak-repair rules, the retirement must be completed within:
+A 60-lb comfort-cooling unit fails verification after a leak repair. The owner decides to retire it and replace it with a CO2 (R-744) system, which is exempt from the Venting Prohibition. Under EPA leak-repair rules, the retirement must be completed within:
 
 **Answer choices**
 
@@ -344,7 +344,7 @@ The owners and operators of regulated appliances containing 50 or more pounds of
 
 **Question**
 
-A grocery store's 120-lb R-22 rack shows an annualized leak rate of 22% in its 2019 log. Under EPA rules for commercial refrigeration with more than 50 Ib, which annual leak-rate threshold triggers the mand atory repair requirement?
+A grocery store's 120-lb R-22 rack shows an annualized leak rate of 22% in its 2019 log. Under EPA rules for commercial refrigeration with more than 50 lb, which annual leak-rate threshold triggers the mandatory repair requirement?
 
 **Answer choices**
 
@@ -365,7 +365,7 @@ The maximum leak rate set by the EPA for a commercial refrigeration system is 20
 
 **Question**
 
-During a service call on a 60-Ib system, you must verify whether the annual leak rate exceeds the EPA limit before topping off. To do that, you first need the system's full charge. According to EPA rules, which method(s) may be used to determine the full charge?
+During a service call on a 60-lb system, you must verify whether the annual leak rate exceeds the EPA limit before topping off. To do that, you first need the system's full charge. According to EPA rules, which method(s) may be used to determine the full charge?
 
 **Answer choices**
 
@@ -527,7 +527,7 @@ Low suction pressure with high superheat
 
 **Explanation**
 
-Low suction pressure combined with high superheat is a common sign of refrigerant undercharge caused by a leak ina capillary-tube system.
+Low suction pressure combined with high superheat is a common sign of refrigerant undercharge caused by a leak in a capillary-tube system.
 
 ## Question 18
 
@@ -764,7 +764,7 @@ Before transferring refrigerant into an empty cylinder, it should first be evacu
 
 **Question**
 
-What must be compieted before connecting a recovery unit to evacuate refrigerant?
+What must be completed before connecting a recovery unit to evacuate refrigerant?
 
 **Answer choices**
 
@@ -827,12 +827,12 @@ If the condenser outlet is lower than the receiver tank outlet, the refrigerant 
 
 **Question**
 
-Under EPA Section 608 recovery requirements, using EPA-certified recovery equipment manufactured on or after Nov 15, 1993, to what level must a high-pressure appliance containing 1000 Ib of R-407C be evacuated before opening the system for a major repair?
+Under EPA Section 608 recovery requirements, using EPA-certified recovery equipment manufactured on or after Nov 15, 1993, to what level must a high-pressure appliance containing 1000 lb of R-407C be evacuated before opening the system for a major repair?
 
 **Answer choices**
 
-A. O psig
-B. 25mm Hg absolute
+A. 0 psig
+B. 25 mm Hg absolute
 C. 10 inches of Hg vacuum
 D. 15 inches of Hg vacuum
 
@@ -842,7 +842,7 @@ D. 15 inches of Hg vacuum
 
 **Explanation**
 
-For a high-pressure appliance with a full charge of 200 Ib or more, the required evacuation level (post-1993 equipment) is 10 inches of Hg vacuum. (15 inches of Hg vacuum applies to medium-pressure appliances with 200 Ib or more.)
+For a high-pressure appliance with a full charge of 200 lb or more, the required evacuation level (post-1993 equipment) is 10 inches of Hg vacuum. (15 inches of Hg vacuum applies to medium-pressure appliances with 200 lb or more.)
 
 ## Question 2
 
@@ -895,7 +895,7 @@ Refrigerant has been recovered during the replacement of the evaporator coil in 
 **Answer choices**
 
 A. can be filled back into the system
-B. can be sold as it is to another equipment owner q
+B. can be sold as it is to another equipment owner
 C. must be reclaimed
 D. must be destroyed
 
@@ -911,7 +911,7 @@ Any recovered refrigerant can be charged back into the system once the repairs a
 
 **Question**
 
-Water in an R-410A system may freeze until the pressure rises to about the saturation pressure at 32°F. Approximately what pressure Is that on the PT chart?
+Water in an R-410A system may freeze until the pressure rises to about the saturation pressure at 32°F. Approximately what pressure is that on the PT chart?
 
 **Answer choices**
 
@@ -974,7 +974,7 @@ About 235 psig at 80°F.
 
 **Question**
 
-At 0 psig pressure, what is the approximate evaporation temperature pf R-134a
+At 0 psig pressure, what is the approximate evaporation temperature of R-134a?
 
 **Answer choices**
 
@@ -989,7 +989,7 @@ D. O° Fahrenheit
 
 **Explanation**
 
-On the R-134a P-T chart, O psig corresponds to a saturation temperature of approximately 15°F.
+On the R-134a P-T chart, 0 psig corresponds to a saturation temperature of approximately 15°F.
 
 ## Question 9
 
@@ -999,7 +999,7 @@ During the evacuation of a moisture-laden chiller, the vacuum stalls, and frost 
 
 **Answer choices**
 
-A. Adda small refrigerant charge to warm the lines, then pull again
+A. Add a small refrigerant charge to warm the lines, then pull again
 B. Run the compressor to heat the circuit before continuing evacuation
 C. Open the system to room air to equalize pressure and temperature
 D. Break the vacuum with a brief nitrogen sweep, then resume evacuation
@@ -1073,7 +1073,7 @@ Refrigerant Detector
 
 **Explanation**
 
-For an equipment room with R717 (ammonia) in its systems, a ; refrigerant detector is not needed.
+For an equipment room with R-717 (ammonia) in its systems, a refrigerant detector is not needed.
 
 ## Question 3
 
@@ -1126,7 +1126,7 @@ The purpose of isopropyl alcohol is:
 **Answer choices**
 
 A. To regulate the pressure during evacuation
-B. Toremove air from the filter drier
+B. To remove air from the filter drier
 C. Toclean ice and dirt off the sight glass
 D. To vent the refrigerant
 
@@ -1142,7 +1142,7 @@ Ice can form on the sight glass at low temperatures, so it should be cleaned usi
 
 **Question**
 
-We would takean [blank] if aunithasa compressor burnout, and it is considereda [blank].
+We would take an [blank] if a unit has a compressor burnout, and it is considered a [blank].
 
 **Answer choices**
 

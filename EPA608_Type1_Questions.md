@@ -214,7 +214,7 @@ System-dependent recovery relies on the system's compressor.
 
 **Question**
 
-We can use a known refrigerant's PT chart to see if there are non- condensables in the refrigerant.
+We can use a known refrigerant's PT chart to see if there are non-condensables in the refrigerant.
 
 **Answer choices**
 
@@ -481,9 +481,7 @@ This statement is true. The method of recovery is irrelevant if the compressor i
 
 **Question**
 
-If a refrigerant's pressure readings are not stable, we can use its
-temperature readings to compare to its PT chart to check for non-
-condensables.
+If a refrigerant's pressure readings are not stable, we can use its temperature readings to compare to its PT chart to check for non-condensables.
 
 **Answer choices**
 
@@ -575,7 +573,7 @@ False
 
 **Explanation**
 
-This statement is false. We need to leak test access fittings before Starting the process of refrigerant recovery, not after completing one.
+This statement is false. We need to leak test access fittings before starting the process of refrigerant recovery, not after completing one.
 
 ## Question 30
 
@@ -601,7 +599,7 @@ This statement is true. When it comes to passive recovery, the process depends o
 
 **Question**
 
-If a recovery device cannot achieve a 4-inch vacuum, which one of the following does it have to be able to do in order to be used with Type I small appliances? (Select all that apply)
+If a recovery device cannot achieve a 4-inch vacuum, which of the following must it be able to do in order to be used with Type I small appliances? (Select all that apply)
 
 **Answer choices**
 
@@ -910,7 +908,7 @@ Locate a self-contained breathing apparatus
 
 **Explanation**
 
-The first thing we should do if there is a leak is to locate a self- contained breathing apparatus (SCBA). Preserving life is the priority.
+The first thing we should do if there is a leak is to locate a self-contained breathing apparatus (SCBA). Preserving life is the priority.
 
 ## Question 4
 
@@ -1443,7 +1441,7 @@ This water cooler is considered a Type I appliance under Section 608 because 14 
 
 **Question**
 
-If I don't have Section 608 certification, I can buy 3 Lb cans of R-134a.
+If I don't have Section 608 certification, I can buy 3 lb cans of R-134a.
 
 
 **Answer choices**
@@ -1681,7 +1679,7 @@ Type 1 systems can have a maximum of pounds of refrigerant, so they can have any
 
 **Question**
 
-QAll Type I small appliances must be charged by the technician before first use.
+All Type I small appliances must be charged by the technician before first use.
 
 
 **Answer choices**
@@ -1715,7 +1713,7 @@ False
 
 **Explanation**
 
-R-600a is a hydrocarbon, and under the use conditions, we cannot retrofit old appliances to operate on hydrocarbons because they are highly flammable. Any malfunction of the modified parts will be dangerous and can cause fires or explosions. The 2 Ib maximum charge applies to new appliances only.
+R-600a is a hydrocarbon, and under the use conditions, we cannot retrofit old appliances to operate on hydrocarbons because they are highly flammable. Any malfunction of the modified parts will be dangerous and can cause fires or explosions. The 2 lb maximum charge applies to new appliances only.
 
 ## Question 36
 
@@ -1951,7 +1949,7 @@ System-dependent recovery relies on the system's compressor.
 
 **Question**
 
-We can use a known refrigerant's PT chart to see if there are non- condensables in the refrigerant.
+We can use a known refrigerant's PT chart to see if there are non-condensables in the refrigerant.
 
 **Answer choices**
 
@@ -2120,7 +2118,7 @@ There are two types of low-loss fittings: Manual low-loss fittings and automatic
 
 **Question**
 
-Which of the following are needed to check for non-condensables ina system? (Select all that apply)
+Which of the following are needed to check for non-condensables in a system? (Select all that apply)
 
 **Answer choices**
 
@@ -2135,7 +2133,7 @@ Refrigerant pressure, Refrigerant type
 
 **Explanation**
 
-Checking for non-condensables requires both refrigerant pressure and refrigerant type. Pressure must be interpreted using the correct refrigerant's pressure-temperature relationship. Without both, the reading cannot be evaluated accurately. You have correctly selected 1.
+Checking for non-condensables requires both refrigerant pressure and refrigerant type. Pressure must be interpreted using the correct refrigerant's pressure-temperature relationship. Without both, the reading cannot be evaluated accurately.
 
 ## Question 20
 
@@ -2222,7 +2220,7 @@ The method of recovery is irrelevant if the compressor is not working. We need t
 
 **Question**
 
-If a refrigerant's pressure readings are not stable, we can use its temperature readings to compare to its PT chart to check for non- condensables.
+If a refrigerant's pressure readings are not stable, we can use its temperature readings to compare to its PT chart to check for non-condensables.
 
 **Answer choices**
 

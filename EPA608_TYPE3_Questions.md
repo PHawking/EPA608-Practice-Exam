@@ -88,7 +88,7 @@ What is the pressure of R-123 at 80°F on the PT chart?
 **Answer choices**
 
 B. 18.1 inches Hg
-C. 1.2 inches Hg i
+C. 1.2 inches Hg
 D. 14.7 psia
 
 **Correct Answer**
@@ -110,7 +110,7 @@ While preparing to charge a low-pressure chiller, you check the safety limit for
 
 A. 10 psig
 B. 15 psig
-C. 5psig
+C. 5 psig
 D. 20 psig
 
 **Correct Answer**
@@ -147,7 +147,7 @@ The Purge Unit is the only component found exclusively in Type 3 appliances.
 
 **Question**
 
-Which of the following i is not a Type 3 frigerant
+Which of the following is not a Type III refrigerant?
 
 
 **Answer choices**
@@ -182,7 +182,7 @@ R-123
 
 **Explanation**
 
-Among the options provided, R-123 is the refrigerant used in low- pressure appliances. It is specifically classified as a low-pressure refrigerant.
+Among the options provided, R-123 is the refrigerant used in low-pressure appliances. It is specifically classified as a low-pressure refrigerant.
 
 ## Question 1
 
@@ -193,7 +193,7 @@ You've pressurized a chiller tube with colored water using a tube test kit. Whic
 **Answer choices**
 
 A. Dye seeping out and visible color marking
-B. Asteady gauge reading with clear water
+B. A steady gauge reading with clear water
 C. Vapor at the vent with no dye trace
 D. No dye movement and no external marks
 
@@ -215,7 +215,7 @@ With the water side drained, why is the drain valve opening the preferred spot t
 
 A. It is the warmest point, boosting detector sensitivity
 B. It sits farthest from the rupture disc seal
-C. Itreduces noise from the vent valve area
+C. It reduces noise from the vent valve area
 D. It's the lowest port where leaked vapor gathers
 
 **Correct Answer**
@@ -251,7 +251,7 @@ Excessive moisture collection in the purge unit could indicate that the condense
 
 **Question**
 
-After pulling a low-pressure chiller down to 1mm Hg, the reading climbs to 2.7 mm Hg over a short hold. What is the compliant next step according to ASHRAE?
+After pulling a low-pressure chiller down to 1 mm Hg, the reading climbs to 2.7 mm Hg over a short hold. What is the compliant next step according to ASHRAE?
 
 **Answer choices**
 
@@ -266,7 +266,7 @@ Perform additional leak checking before any charging
 
 **Explanation**
 
-ASHRAE Guidelines 3 states that if the pressure in the system rises from 1mm Hg to a level above 2.5 mm Hg during vacuum testing, the system should be further leak-checked.
+ASHRAE Guidelines 3 states that if the pressure in the system rises from 1 mm Hg to a level above 2.5 mm Hg during vacuum testing, the system should be further leak-checked.
 
 ## Question 5
 
@@ -333,7 +333,7 @@ If a belt-driven non-hermetic compressor has not been used for several months, t
 
 **Question**
 
-On January 10, 2024, an HVAC servicing company disposes of a rooftop unit containing 35 Ib of refrigerant. Until what date must the company retain the disposal records at minimum?
+On January 10, 2024, an HVAC servicing company disposes of a rooftop unit containing 35 lb of refrigerant. Until what date must the company retain the disposal records at minimum?
 
 **Answer choices**
 
@@ -348,13 +348,13 @@ January 10,2027
 
 **Explanation**
 
-An HVAC servicing company that disposes of an appliance with a charge between 5 and 50 pounds must keep the records for a minimum period of 3 years. From January 10, 2024, years is January 10, 2027.
+An HVAC servicing company that disposes of an appliance with a charge between 5 and 50 pounds must keep the records for a minimum period of 3 years. Three years from January 10, 2024, is January 10, 2027.
 
 ## Question 2
 
 **Question**
 
-A low-pressure chiller with a full charge >200 Ib is found leaking on June 15, 2024. The owner chooses a replacement that uses a refrigerant that is exempt from venting prohibitions. By what date must the unit be retired or retrofitted?
+A low-pressure chiller with a full charge greater than 200 lb is found leaking on June 15, 2024. The owner chooses a replacement that uses a refrigerant that is exempt from venting prohibitions. By what date must the unit be retired or retrofitted?
 
 **Answer choices**
 
@@ -369,7 +369,7 @@ December 15, 2025
 
 **Explanation**
 
-EPA regulations normally allow 12 months for retrofit or retirement after exceeding leak thresholds. However, if the replacement i system will use a refrigerant exempt from venting prohibitions (such as R-717 or R-744), the deadline extends to 18 months from the leak , discovery date. June 15, 2024 + 18 months = December 15, 2025.
+EPA regulations normally allow 12 months for retrofit or retirement after exceeding leak thresholds. However, if the replacement system will use a refrigerant exempt from venting prohibitions (such as R-717 or R-744), the deadline extends to 18 months from the leak discovery date. June 15, 2024 + 18 months = December 15, 2025.
 
 ## Question 3
 
@@ -417,14 +417,14 @@ Owners and operators of regulated appliances containing 50 or more pounds of reg
 
 **Question**
 
-During a service call on a 60-Ib system, you must verify ether he annual leak rate exceeds the EPA limit before topping off. To do that, you first need the system's full charge. According to EPA rules, which methods may be used to determine the full charge?
+During a service call on a 60-lb system, you must verify whether the annual leak rate exceeds the EPA limit before topping off. To do that, you first need the system's full charge. According to EPA rules, which methods may be used to determine the full charge?
 
 **Answer choices**
 
 A. Calculations based on power consumption, in kWh
 B. Calculations based on tonnage
 C. Calculations based on component and pipe sizes
-D. Calculations based on the BTU capacity of the system 
+D. Calculations based on the BTU capacity of the system
 
 **Correct Answer**
 
@@ -474,13 +474,13 @@ When topping off the system
 
 **Explanation**
 
-The requirement to calculate the leak rate is triggered when topping off fefrigerant, regardless of the specific scenario.
+The requirement to calculate the leak rate is triggered when topping off refrigerant, regardless of the specific scenario.
 
 ## Question 8
 
 **Question**
 
-When disposing of an HVAC appliance with 10 pounds of refrigerent, what is one EPA-mandated recordkeeping requirement?
+When disposing of an HVAC appliance with 10 pounds of refrigerant, what is one EPA-mandated recordkeeping requirement?
 
 **Answer choices**
 
@@ -506,7 +506,7 @@ Why do recovery units used on low-pressure chillers include a high-pressure cut-
 **Answer choices**
 
 A. To increase flow rate through the recovery compressor
-B. Tokeep the purge unit operating continuously
+B. To keep the purge unit operating continuously
 C. To prevent the rupture disc from bursting as pressure climbs
 D. To maintain constant superheat at the condenser outlet
 
@@ -525,7 +525,7 @@ Low-pressure chillers have rupture discs that can open around 10-15 psig; the cu
 You're beginning recovery on a low-pressure chiller at ambient conditions. To follow best practice, you should:
 
 **Answer choices**
-A. Open the purge and hold at O psig
+A. Open the purge and hold at 0 psig
 B. Pump out liquid first, then recover vapor
 C. Pump out vapor first, then recover liquid
 D. Add heat, then pull vapor only
@@ -609,8 +609,8 @@ While evacuating a low-pressure chiller with no confirmed tube leaks, the water 
 
 **Answer choices**
 
-A. Loss of recovered mass to the purge unit &
-B. Sudden rise in refrigerant pressure above setpoint G:
+A. Loss of recovered mass to the purge unit
+B. Sudden rise in refrigerant pressure above setpoint
 C. Ice formation that can damage tubes and pumps
 D. Loss of vacuum due to air diffusion
 
@@ -672,10 +672,10 @@ Identify the recovery requirements for equipment disposal
 
 **Answer choices**
 
-A. 0 psig 
+A. 0 psig
 B. 15 inches of Hg vacuum
 C. 25 inches of Hg vacuum
-D. 25mm of Hg absolute
+D. 25 mm of Hg absolute
 
 **Correct Answer**
 
@@ -683,7 +683,7 @@ D. 25mm of Hg absolute
 
 **Explanation**
 
-The EPA requires systems to be evacuated to mm Hg absolute (nearly a perfect vacuum) before equipment disposal. This standard ensures almost all refrigerant is recovered and prevents environmental harm.
+The EPA requires systems to be evacuated to 25 mm Hg absolute (nearly a perfect vacuum) before equipment disposal. This standard ensures almost all refrigerant is recovered and prevents environmental harm.
 
 ## Question 4
 
@@ -696,7 +696,7 @@ Water present in the system can freeze if?
 A. A large vacuum pump is used for evacuation
 B. A recovery unit is used for evacuation
 C. The system's compressor is used for evacuation
-D. Ahouse vacuum cleaner is used for evacuation
+D. A house vacuum cleaner is used for evacuation
 
 **Correct Answer**
 
@@ -774,7 +774,7 @@ According to EPA regulations, a major repair involves the removal of specific co
 
 **Question**
 
-A mechanical room contains equipment using A1, A2L, and B2 refrigerants. To comply with ASHRAE Stand ard 15-2013, the refrigerant alarm system must detect leaks from:
+A mechanical room contains equipment using A1, A2L, and B2 refrigerants. To comply with ASHRAE Standard 15-2013, the refrigerant alarm system must detect leaks from:
 
 **Answer choices**
 
@@ -789,13 +789,13 @@ All refrigerant safety groups
 
 **Explanation**
 
-ASHRAE Stand ard 15-2013 requires the use of room sensors and alarms to detect leaks of refrigerant belonging to all safety groups. Detection isn't limited to one class.
+ASHRAE Standard 15-2013 requires the use of room sensors and alarms to detect leaks of refrigerant belonging to all safety groups. Detection isn't limited to one class.
 
 ## Question 3
 
 **Question**
 
-According to ASHRAE Stand ard 15-2013, which equipment is mandated to detect refrigerant leaks?
+According to ASHRAE Standard 15-2013, which equipment is mandated to detect refrigerant leaks?
 
 **Answer choices**
 
@@ -810,7 +810,7 @@ Room Sensors
 
 **Explanation**
 
-ASHRAE Stand ard 15-2013 requires equipment rooms to be equipped with electronic refrigerant detectors, also known as room sensors, to detect refrigerant leaks.
+ASHRAE Standard 15-2013 requires equipment rooms to be equipped with electronic refrigerant detectors, also known as room sensors, to detect refrigerant leaks.
 
 ## Question **OCR Note:** unreadable original number
 
@@ -842,7 +842,7 @@ What is the main function of isopropyl alcohol in refrigeration systems?
 **Answer choices**
 
 A. To regulate the pressure while evacuation
-B. Toremove air from the filter drier
+B. To remove air from the filter drier
 C. To remove ice off the sight glass
 D. To vent the refrigerant
 
