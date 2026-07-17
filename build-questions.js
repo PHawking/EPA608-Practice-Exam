@@ -87,7 +87,9 @@ function correctIndexes(answer, choices, question = '') {
 function parseFile(key, label, filename) {
   const markdown = fs.readFileSync(path.join(__dirname, filename), 'utf8');
   return markdown.split(/^##\s+Question[^\n]*$/gmi).slice(1).map((block, index) => {
-    const question = clean(field(block, 'Question', ['Answer choices', 'Correct Answer', 'Explanation']));
+    const question = clean(field(block, 'Question', ['Answer choices', 'Correct Answer', 'Explanation']))
+      .replace(/\s+PT Chart(?:\s+Temperature.*)?$/i, '')
+      .trim();
     const choices = parseChoices(field(block, 'Answer choices', ['Correct Answer', 'Explanation']));
     const correctAnswer = clean(field(block, 'Correct Answer', ['Explanation']));
     const explanation = clean(field(block, 'Explanation', [])) || 'No explanation was provided in the source material.';

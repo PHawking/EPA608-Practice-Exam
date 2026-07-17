@@ -78,14 +78,25 @@
   function commitTime() { if (!state.paused) state.elapsed += Math.floor((Date.now() - state.runningSince) / 1000); state.runningSince = Date.now(); }
 
   function answerFor(question) { return state.answers[question.id] || []; }
+  function chartRefrigerant(question) {
+    const needsChart = /according to (?:the )?(?:p-?t|pt) chart|on (?:the )?(?:p-?t|pt) chart|saturation pressure at 32°?f|at 0 psig pressure.*evaporation temperature/i.test(question.question);
+    if (!needsChart) return null;
+    return question.question.match(/\bR-\d+(?:[A-Z])?\b/i)?.[0].toUpperCase() || 'the specified refrigerant';
+  }
   function renderQuestion() {
     const question = state.questions[state.current];
     const selected = answerFor(question);
     const multi = question.correct.length > 1 || /select all/i.test(question.question);
+    const refrigerant = chartRefrigerant(question);
     $('section-badge').textContent = question.sectionLabel;
     $('question-number').textContent = `Question ${state.current + 1}`;
     $('question-text').textContent = question.question;
     $('select-hint').hidden = !multi;
+    $('question-chart').hidden = !refrigerant;
+    if (refrigerant) {
+      $('chart-title').textContent = `Pressure-temperature chart — ${refrigerant}`;
+      $('chart-caption').textContent = `Use the ${refrigerant} column. Scroll vertically to find the required temperature, or open the full chart to zoom.`;
+    }
     $('answer-options').innerHTML = question.choices.map((choice, index) => `<label class="answer-option ${selected.includes(choice.originalIndex) ? 'selected' : ''}"><input type="${multi ? 'checkbox' : 'radio'}" name="answer" value="${choice.originalIndex}" ${selected.includes(choice.originalIndex) ? 'checked' : ''}><span class="choice-letter">${String.fromCharCode(65 + index)}</span><span>${escapeHtml(choice.text)}</span><span class="choice-indicator"></span></label>`).join('');
     document.querySelectorAll('input[name="answer"]').forEach(input => input.addEventListener('change', handleAnswer));
     $('previous-btn').disabled = state.current === 0;

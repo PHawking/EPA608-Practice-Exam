@@ -14,6 +14,7 @@ fs.mkdirSync(path.join(dist, '.openai'), { recursive: true });
 for (const file of ['index.html', 'styles.css', 'app.js', 'questions.js']) {
   fs.copyFileSync(path.join(root, file), path.join(client, file));
 }
+fs.cpSync(path.join(root, 'assets'), path.join(client, 'assets'), { recursive: true });
 fs.copyFileSync(path.join(root, '.openai', 'hosting.json'), path.join(dist, '.openai', 'hosting.json'));
 
 const worker = `export default {

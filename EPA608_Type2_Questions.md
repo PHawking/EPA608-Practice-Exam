@@ -989,7 +989,7 @@ D. O° Fahrenheit
 
 **Explanation**
 
-On the R-134a P-T chart, 0 psig corresponds to a saturation temperature of approximately 15°F.
+On the R-134a P-T chart, 0 psig corresponds to a saturation temperature of approximately -15°F.
 
 ## Question 9
 
