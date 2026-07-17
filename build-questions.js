@@ -47,13 +47,29 @@ function correctIndexes(answer, choices, question = '') {
   const answerNorm = normalized(answer);
   const letterOnly = clean(answer).match(/^([A-H](?:\s*(?:,|and|&)\s*[A-H])*)$/i);
   if (letterOnly) return [...clean(answer).matchAll(/[A-H]/gi)].map(m => m[0].toUpperCase().charCodeAt(0) - 65).filter(i => i < choices.length);
-  const found = choices.map((choice, index) => {
-    const value = normalized(choice);
-    const compactAnswer = answerNorm.replace(/\s/g, '');
-    const compactValue = value.replace(/\s/g, '');
-    return value && (answerNorm === value || answerNorm.includes(value) || value.includes(answerNorm) || compactAnswer.includes(compactValue) || compactValue.includes(compactAnswer)) ? index : -1;
-  }).filter(index => index >= 0);
-  if (found.length) return found;
+  const exactIndex = choices.findIndex(choice => normalized(choice) === answerNorm);
+  if (exactIndex >= 0) return [exactIndex];
+
+  // Match a sequence of complete choices against the complete answer. This
+  // supports choices that contain their own commas while preventing partial
+  // matches such as "3,000" inside "300,000" or "A2" inside "A2L".
+  const choiceValues = choices.map(normalized);
+  function matchChoiceSequence(remaining, used = []) {
+    if (!remaining) return used;
+    for (let index = 0; index < choiceValues.length; index++) {
+      if (used.includes(index)) continue;
+      const value = choiceValues[index];
+      if (remaining === value) return [...used, index];
+      if (remaining.startsWith(`${value} `)) {
+        const matched = matchChoiceSequence(remaining.slice(value.length + 1), [...used, index]);
+        if (matched) return matched;
+      }
+    }
+    return null;
+  }
+  const sequence = matchChoiceSequence(answerNorm);
+  if (sequence?.length > 1) return sequence;
+
   if (/all of these (?:are )?true/i.test(answer) && /not true/i.test(question)) {
     const noneIndex = choices.findIndex(choice => /none of these/i.test(choice));
     if (noneIndex >= 0) return [noneIndex];

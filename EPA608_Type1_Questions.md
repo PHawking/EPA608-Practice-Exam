@@ -735,7 +735,7 @@ D. The system has definitely developed a leak
 
 **Correct Answer**
 
-There may be only a small amount of refrigerant remaining in the appliance, The system has definitely developed a leak
+There may be only a small amount of refrigerant remaining in the appliance
 
 **Explanation**
 
