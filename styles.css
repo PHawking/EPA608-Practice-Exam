@@ -42,3 +42,8 @@ button { color:inherit; }
   .chart-frame { height:310px; }
   .chart-frame img { width:620px;max-width:none; }
 }
+
+.review-answer.user-answer { padding:12px 14px;margin:13px 0; }
+.review-answer.user-answer.is-incorrect { background:var(--red-bg);border-color:var(--red);color:#702b27; }
+.review-answer.user-answer.is-correct { background:#eef8f3;border-color:var(--green-2);color:var(--green); }
+.review-answer.correct-answer { background:#eef8f3;padding:12px 14px;border-color:var(--green-2);color:var(--green); }

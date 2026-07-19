@@ -1016,7 +1016,7 @@ When do we need to use safety eyewear and butyl-lined gloves?
 
 A. When testing the quality of refrigerant
 B. When moving refrigerant cylinders
-C. When connecting and disconnecting hoses Vv
+C. When connecting and disconnecting hoses
 D. When taring the refrigerant scale
 
 **Correct Answer**

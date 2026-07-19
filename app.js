@@ -2,7 +2,7 @@
   const bank = window.QUESTION_BANK || [];
   const sectionOrder = ['core', 'type1', 'type2', 'type3'];
   const sectionMeta = { core: ['Core', 'Fundamentals & regulations'], type1: ['Type I', 'Small appliances'], type2: ['Type II', 'High-pressure systems'], type3: ['Type III', 'Low-pressure systems'] };
-  const storageKey = 'epa608-practice-exam-v4';
+  const storageKey = 'epa608-practice-exam-v5';
   const $ = id => document.getElementById(id);
   let state = null;
   let timerHandle = null;
@@ -32,6 +32,8 @@
     const aggregate = /^(?:all|none|both|neither)\s+of\s+(?:these|the following)\b/i;
     const regularChoices = choices.filter(choice => !aggregate.test(choice.text));
     const aggregateChoices = choices.filter(choice => aggregate.test(choice.text));
+    const otherAggregate = /^(?:all|none|both|either|neither)\b/i;
+    if (choices.some(choice => otherAggregate.test(choice.text)) && !aggregateChoices.length) return choices;
     return [...shuffle(regularChoices), ...aggregateChoices];
   }
 
@@ -169,7 +171,7 @@
     $('review-all-btn').textContent = reviewAll ? 'Show incorrect only' : 'Show all answers';
     $('review-list').innerHTML = questions.length ? questions.map((q, i) => {
       const answer = answerFor(q); const correct = isCorrect(q);
-      return `<article class="review-card ${correct ? 'correct' : 'incorrect'}"><div class="review-meta"><span>${q.sectionLabel}</span><span>${correct ? '✓ Correct' : '× Incorrect'}</span></div><h3>${escapeHtml(q.question)}</h3><div class="review-answer"><small>Your answer</small><p>${answer.length ? q.choices.filter(c => answer.includes(c.originalIndex)).map(c => escapeHtml(c.text)).join('; ') : 'No answer selected'}</p></div>${!correct ? `<div class="review-answer correct-answer"><small>Correct answer</small><p>${q.choices.filter(c => q.correct.includes(c.originalIndex)).map(c => escapeHtml(c.text)).join('; ') || escapeHtml(q.correctAnswer)}</p></div>` : ''}<div class="explanation"><strong>Why this is correct</strong><p>${escapeHtml(q.explanation)}</p></div></article>`;
+      return `<article class="review-card ${correct ? 'correct' : 'incorrect'}"><div class="review-meta"><span>${q.sectionLabel}</span><span>${correct ? '✓ Correct' : '× Incorrect'}</span></div><h3>${escapeHtml(q.question)}</h3><div class="review-answer user-answer ${correct ? 'is-correct' : 'is-incorrect'}"><small>Your answer</small><p>${answer.length ? q.choices.filter(c => answer.includes(c.originalIndex)).map(c => escapeHtml(c.text)).join('; ') : 'No answer selected'}</p></div>${!correct ? `<div class="review-answer correct-answer"><small>Correct answer</small><p>${q.choices.filter(c => q.correct.includes(c.originalIndex)).map(c => escapeHtml(c.text)).join('; ') || escapeHtml(q.correctAnswer)}</p></div>` : ''}<div class="explanation"><strong>Why this is correct</strong><p>${escapeHtml(q.explanation)}</p></div></article>`;
     }).join('') : '<div class="perfect-score"><span>✓</span><h3>Perfect score!</h3><p>You answered every question correctly.</p></div>';
   }
 

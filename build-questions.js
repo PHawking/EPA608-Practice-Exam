@@ -98,21 +98,47 @@ function parseFile(key, label, filename) {
 }
 
 const parsedData = sources.flatMap(source => parseFile(...source));
-const uniqueQuestions = new Map();
+const uniqueQuestions = [];
 const duplicates = [];
+
+function correctChoiceSignature(question) {
+  return question.correct.map(index => normalized(question.choices[index] || '')).sort().join('|');
+}
+
+function choiceSignature(question) {
+  return question.choices.map(normalized).sort().join('|');
+}
+
+function questionSimilarity(first, second) {
+  const firstWords = new Set(normalized(first).split(' ').filter(Boolean));
+  const secondWords = new Set(normalized(second).split(' ').filter(Boolean));
+  const shared = [...firstWords].filter(word => secondWords.has(word)).length;
+  return shared / (firstWords.size + secondWords.size - shared || 1);
+}
+
 for (const question of parsedData) {
-  const key = `${question.section}|${normalized(question.question)}`;
-  const existing = uniqueQuestions.get(key);
-  if (!existing) {
-    uniqueQuestions.set(key, question);
+  const exactKey = normalized(question.question);
+  const duplicateIndex = uniqueQuestions.findIndex(existing => {
+    if (normalized(existing.question) === exactKey) return true;
+    return choiceSignature(existing) === choiceSignature(question)
+      && correctChoiceSignature(existing) === correctChoiceSignature(question)
+      && questionSimilarity(existing.question, question.question) >= .9;
+  });
+  if (duplicateIndex < 0) {
+    uniqueQuestions.push(question);
     continue;
   }
-  if (normalized(existing.correctAnswer) !== normalized(question.correctAnswer)) {
+  const existing = uniqueQuestions[duplicateIndex];
+  if (normalized(existing.question) === exactKey
+      && normalized(existing.correctAnswer) !== normalized(question.correctAnswer)
+      && correctChoiceSignature(existing) !== correctChoiceSignature(question)) {
     throw new Error(`Conflicting duplicate answer keys: ${existing.id} and ${question.id}`);
   }
-  duplicates.push({ kept: existing.id, removed: question.id });
+  const preferNew = normalized(question.question).length > normalized(existing.question).length;
+  if (preferNew) uniqueQuestions[duplicateIndex] = question;
+  duplicates.push({ kept: preferNew ? question.id : existing.id, removed: preferNew ? existing.id : question.id });
 }
-const data = [...uniqueQuestions.values()];
+const data = uniqueQuestions;
 const unresolved = data.filter(q => !q.correct.length);
 if (unresolved.length) {
   console.warn(`Warning: ${unresolved.length} answers could not be matched to choices:`);

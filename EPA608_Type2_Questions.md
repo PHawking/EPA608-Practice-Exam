@@ -54,7 +54,7 @@ What visual indication might be seen on a moisture-indicating sight glass if moi
 **Answer choices**
 
 A. Aclear, unobstructed view through the glass
-B. Acolor change/discoloration of the moisture indicator Vv element in the sight glass
+B. A color change/discoloration of the moisture indicator element in the sight glass
 C. Scratches or cracks appearing on the glass QO . -Onaae
 D. Water dripping from the sight glass
 
@@ -936,9 +936,9 @@ Water present in the system can freeze if:
 
 **Answer choices**
 
-A. Alarge vacuum pump is used for evacuation
+A. A large vacuum pump is used for evacuation
 B. A recovery unit is used for evacuation
-C. Thesystem's compressor is used for evacuation
+C. The system's compressor is used for evacuation
 D. A house vacuum cleaner is used for evacuation
 
 **Correct Answer**
