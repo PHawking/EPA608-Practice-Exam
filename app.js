@@ -138,6 +138,14 @@
     $('submit-overlay').hidden = false;
   }
 
+  function continueReview() {
+    $('submit-overlay').hidden = true;
+    state.current = 0;
+    save();
+    renderQuestion();
+    window.scrollTo(0, 0);
+  }
+
   function isCorrect(question) {
     const answer = [...answerFor(question)].sort((a, b) => a - b);
     const correct = [...question.correct].sort((a, b) => a - b);
@@ -183,7 +191,7 @@
   $('previous-btn').addEventListener('click', () => move(-1)); $('next-btn').addEventListener('click', () => move(1));
   $('pause-btn').addEventListener('click', pause); $('resume-overlay-btn').addEventListener('click', resume);
   $('exit-test-btn').addEventListener('click', () => { $('pause-overlay').hidden = true; show('setup-view'); renderSetup(); });
-  $('submit-btn').addEventListener('click', promptSubmit); $('cancel-submit-btn').addEventListener('click', () => $('submit-overlay').hidden = true); $('confirm-submit-btn').addEventListener('click', submitExam);
+  $('submit-btn').addEventListener('click', promptSubmit); $('cancel-submit-btn').addEventListener('click', continueReview); $('confirm-submit-btn').addEventListener('click', submitExam);
   $('retry-btn').addEventListener('click', () => { localStorage.removeItem(storageKey); state = null; reviewAll = false; renderSetup(); show('setup-view'); });
   $('review-all-btn').addEventListener('click', () => { reviewAll = !reviewAll; renderReview(); });
   renderSetup();
