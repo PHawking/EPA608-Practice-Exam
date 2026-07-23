@@ -1,8 +1,7 @@
 (() => {
   const bank = window.QUESTION_BANK || [];
-  const sectionOrder = ['core', 'type1', 'type2', 'type3'];
-  const setupSectionOrder = [...sectionOrder, 'comprehensive'];
-  const sectionMeta = { core: ['Core', 'Fundamentals & regulations'], type1: ['Type I', 'Small appliances'], type2: ['Type II', 'High-pressure systems'], type3: ['Type III', 'Low-pressure systems'], comprehensive: ['Comprehensive Review', 'Balanced Core + Types I, II & III'] };
+  const sectionOrder = ['core', 'type1', 'type2', 'type3', 'newset'];
+  const sectionMeta = { core: ['Core', 'Fundamentals & regulations'], type1: ['Type I', 'Small appliances'], type2: ['Type II', 'High-pressure systems'], type3: ['Type III', 'Low-pressure systems'], newset: ['New Question Set', '100 new questions across all exam areas'] };
   const storageKey = 'epa608-practice-exam-v5';
   const $ = id => document.getElementById(id);
   let state = null;
@@ -44,27 +43,18 @@
 
   function renderSetup() {
     const counts = Object.fromEntries(sectionOrder.map(key => [key, bank.filter(q => q.section === key).length]));
-    counts.comprehensive = bank.length;
-    $('section-options').innerHTML = setupSectionOrder.map((key, index) => {
+    $('section-options').innerHTML = sectionOrder.map((key, index) => {
       const [label, subtitle] = sectionMeta[key];
       return `<label class="section-option"><input type="checkbox" name="section" value="${key}" ${index === 0 ? 'checked' : ''}><span class="section-check">✓</span><span class="section-number">${String(index).padStart(2, '0')}</span><span class="section-copy"><strong>${label}</strong><small>${subtitle}</small></span><span class="question-total">${counts[key]}<small>questions</small></span></label>`;
     }).join('');
-    document.querySelectorAll('input[name="section"]').forEach(input => input.addEventListener('change', () => {
-      const comprehensive = document.querySelector('input[name="section"][value="comprehensive"]');
-      if (input.value === 'comprehensive' && input.checked) {
-        document.querySelectorAll('input[name="section"]:not([value="comprehensive"])').forEach(section => { section.checked = false; });
-      } else if (input.checked && comprehensive) comprehensive.checked = false;
-      syncToggleAllLabel();
-    }));
     const saved = savedState();
     $('resume-btn').hidden = !(saved && saved.status === 'active' && saved.questions?.length);
   }
 
   function startExam(event) {
     event.preventDefault();
-    const requestedSections = [...document.querySelectorAll('input[name="section"]:checked')].map(input => input.value);
-    if (!requestedSections.length) { $('setup-error').textContent = 'Choose at least one section to begin.'; return; }
-    const sections = requestedSections.includes('comprehensive') ? sectionOrder : requestedSections;
+    const sections = [...document.querySelectorAll('input[name="section"]:checked')].map(input => input.value);
+    if (!sections.length) { $('setup-error').textContent = 'Choose at least one section to begin.'; return; }
     const count = $('question-count').value;
     const shouldShuffle = $('shuffle-questions').checked;
     const questions = sections.flatMap(section => {
@@ -195,20 +185,8 @@
 
   function escapeHtml(value = '') { const div = document.createElement('div'); div.textContent = value; return div.innerHTML; }
 
-  function syncToggleAllLabel() {
-    const boxes = [...document.querySelectorAll('input[name="section"]:not([value="comprehensive"])')];
-    $('toggle-all').textContent = boxes.length && boxes.every(box => box.checked) ? 'Clear all' : 'Select all';
-  }
-
   $('setup-form').addEventListener('submit', startExam);
-  $('toggle-all').addEventListener('click', () => {
-    const boxes = [...document.querySelectorAll('input[name="section"]:not([value="comprehensive"])')];
-    const all = boxes.every(box => box.checked);
-    boxes.forEach(box => { box.checked = !all; });
-    const comprehensive = document.querySelector('input[name="section"][value="comprehensive"]');
-    if (comprehensive) comprehensive.checked = false;
-    syncToggleAllLabel();
-  });
+  $('toggle-all').addEventListener('click', () => { const boxes = [...document.querySelectorAll('input[name="section"]')]; const all = boxes.every(b => b.checked); boxes.forEach(b => b.checked = !all); $('toggle-all').textContent = all ? 'Select all' : 'Clear all'; });
   $('resume-btn').addEventListener('click', () => { state = savedState(); enterExam(); });
   $('previous-btn').addEventListener('click', () => move(-1)); $('next-btn').addEventListener('click', () => move(1));
   $('pause-btn').addEventListener('click', pause); $('resume-overlay-btn').addEventListener('click', resume);

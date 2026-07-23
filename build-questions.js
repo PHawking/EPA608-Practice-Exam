@@ -5,7 +5,8 @@ const sources = [
   ['core', 'Core', 'EPA608_Core_Questions.md'],
   ['type1', 'Type I', 'EPA608_Type1_Questions.md'],
   ['type2', 'Type II', 'EPA608_Type2_Questions.md'],
-  ['type3', 'Type III', 'EPA608_TYPE3_Questions.md']
+  ['type3', 'Type III', 'EPA608_TYPE3_Questions.md'],
+  ['newset', 'New Question Set', 'EPA608_New_Questions_For_Validation.md']
 ];
 
 function clean(value = '') {
